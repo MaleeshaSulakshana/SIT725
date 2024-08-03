@@ -43,7 +43,7 @@ app.get('/api/pets', (req,res) => {
 app.get('/api/pet/:id', (req,res) => {
     getPetById(req.params.id, (err,result)=>{
         if (!err) {
-            res.json({statusCode:200, data:result, message:'get all pets successful'});
+            res.json({statusCode:200, data:result, message:'get pet successful'});
         }
     });
 });
